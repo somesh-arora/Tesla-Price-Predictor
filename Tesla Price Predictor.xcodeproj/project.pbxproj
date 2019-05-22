@@ -12,6 +12,7 @@
 		CE2DDC12229389E700274B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2DDC10229389E700274B2A /* Main.storyboard */; };
 		CE2DDC14229389E900274B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2DDC13229389E900274B2A /* Assets.xcassets */; };
 		CE2DDC17229389E900274B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2DDC15229389E900274B2A /* LaunchScreen.storyboard */; };
+		CE2DDC1F229397B300274B2A /* Cars.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CE2DDC1E229397B200274B2A /* Cars.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CE2DDC13229389E900274B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2DDC16229389E900274B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2DDC18229389E900274B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2DDC1E229397B200274B2A /* Cars.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Cars.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				CE2DDC13229389E900274B2A /* Assets.xcassets */,
 				CE2DDC15229389E900274B2A /* LaunchScreen.storyboard */,
 				CE2DDC18229389E900274B2A /* Info.plist */,
+				CE2DDC1E229397B200274B2A /* Cars.mlmodel */,
 			);
 			path = "Tesla Price Predictor";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				CE2DDC0F229389E700274B2A /* ViewController.swift in Sources */,
 				CE2DDC0D229389E700274B2A /* AppDelegate.swift in Sources */,
+				CE2DDC1F229397B300274B2A /* Cars.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

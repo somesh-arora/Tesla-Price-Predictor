@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,234 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="V4x-lK-KR4">
+                                <rect key="frame" x="57" y="94" width="300" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="Shj-W8-Mul"/>
+                                    <constraint firstAttribute="width" constant="300" id="U9L-6X-5mr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91R-L6-0vc">
+                                <rect key="frame" x="82" y="712" width="250" height="50"/>
+                                <color key="backgroundColor" name="TeslaRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QtI-pw-hMb"/>
+                                    <constraint firstAttribute="width" constant="250" id="beS-zr-8od"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Evaluate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="kGw-LY-Bey" kind="show" id="A9y-gB-zWc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="91R-L6-0vc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MR3-tL-eaX"/>
+                            <constraint firstItem="V4x-lK-KR4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XaN-yp-YYS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="91R-L6-0vc" secondAttribute="bottom" constant="100" id="eSX-Z6-aPI"/>
+                            <constraint firstItem="V4x-lK-KR4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="swS-Rk-Hlc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="457.97101449275368" y="118.52678571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KbP-rg-4Zb">
+            <objects>
+                <viewController id="kGw-LY-Bey" customClass="ViewController" customModule="Tesla_Price_Predictor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xp1-Al-1CM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="7Xe-bP-aUj">
+                                <rect key="frame" x="132" y="69" width="150" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="aOV-do-KDt"/>
+                                    <constraint firstAttribute="height" constant="60" id="ffD-TF-UbK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Premium Upgrades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IU-nw-nK6">
+                                <rect key="frame" x="82" y="274" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3aD-sS-U4C"/>
+                                    <constraint firstAttribute="width" constant="250" id="ZAs-Eq-PJy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mileage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfE-nL-X9V">
+                                <rect key="frame" x="82" y="389" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="i0r-xM-u1K"/>
+                                    <constraint firstAttribute="width" constant="250" id="iY9-Qn-Bza"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg2-ZU-0Qf">
+                                <rect key="frame" x="82" y="504" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="VBy-0i-BwP"/>
+                                    <constraint firstAttribute="width" constant="250" id="hot-xc-m5V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trade In Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5w-kk-N8u">
+                                <rect key="frame" x="82" y="619" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="n3f-0N-H9H"/>
+                                    <constraint firstAttribute="height" constant="35" id="sO0-dP-stS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="P4p-LT-5Sx">
+                                <rect key="frame" x="32" y="329" width="350" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="SRC-r5-0f6"/>
+                                    <constraint firstAttribute="height" constant="30" id="toU-Xs-Lqg"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Not Installed"/>
+                                    <segment title="Installed"/>
+                                </segments>
+                                <color key="tintColor" name="TeslaRed"/>
+                                <connections>
+                                    <action selector="calculateValue:" destination="kGw-LY-Bey" eventType="valueChanged" id="phj-88-bMY"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="olR-Iv-Eqe">
+                                <rect key="frame" x="32" y="559" width="350" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZBb-9y-LaO"/>
+                                    <constraint firstAttribute="width" constant="350" id="sbT-2f-9kc"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Poor"/>
+                                    <segment title="Average"/>
+                                    <segment title="Good"/>
+                                    <segment title="Great"/>
+                                </segments>
+                                <color key="tintColor" name="TeslaRed"/>
+                                <connections>
+                                    <action selector="calculateValue:" destination="kGw-LY-Bey" eventType="valueChanged" id="eKc-Sd-IQp"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="40000" minValue="2000" maxValue="200000" translatesAutoresizingMaskIntoConstraints="NO" id="KMT-PL-BN2">
+                                <rect key="frame" x="30" y="444" width="354" height="31"/>
+                                <color key="tintColor" name="TeslaRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6qm-sk-JgT"/>
+                                    <constraint firstAttribute="width" constant="350" id="rMi-rK-4Nt"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" name="TeslaRed"/>
+                                <color key="thumbTintColor" name="TeslaRed"/>
+                                <connections>
+                                    <action selector="calculateValue:" destination="kGw-LY-Bey" eventType="valueChanged" id="aGk-Hw-G1f"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$50000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1a-qG-NYd">
+                                <rect key="frame" x="32" y="674" width="350" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="In3-Hm-bex"/>
+                                    <constraint firstAttribute="height" constant="100" id="vXb-nq-wNw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvU-6M-47U">
+                                <rect key="frame" x="82" y="159" width="250" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Iem-xU-Wrr"/>
+                                    <constraint firstAttribute="height" constant="35" id="oeC-oE-Hqx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="O0k-hz-uBg">
+                                <rect key="frame" x="32" y="214" width="350" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="7me-SP-0q3"/>
+                                    <constraint firstAttribute="height" constant="30" id="Zn0-TX-TeK"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Model 3"/>
+                                    <segment title="Model S"/>
+                                    <segment title="Model X"/>
+                                </segments>
+                                <color key="tintColor" name="TeslaRed"/>
+                                <connections>
+                                    <action selector="calculateValue:" destination="kGw-LY-Bey" eventType="valueChanged" id="KLG-PE-vNa"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bg2-ZU-0Qf" firstAttribute="top" secondItem="KMT-PL-BN2" secondAttribute="bottom" constant="30" id="12c-j8-iUX"/>
+                            <constraint firstItem="B1a-qG-NYd" firstAttribute="centerX" secondItem="Xp1-Al-1CM" secondAttribute="centerX" id="1Yg-Ks-caP"/>
+                            <constraint firstItem="7Xe-bP-aUj" firstAttribute="centerX" secondItem="Xp1-Al-1CM" secondAttribute="centerX" id="3cm-vY-ZK0"/>
+                            <constraint firstItem="PfE-nL-X9V" firstAttribute="top" secondItem="P4p-LT-5Sx" secondAttribute="bottom" constant="30" id="4Tx-MK-2aw"/>
+                            <constraint firstItem="P4p-LT-5Sx" firstAttribute="top" secondItem="2IU-nw-nK6" secondAttribute="bottom" constant="20" id="9rc-CJ-dnC"/>
+                            <constraint firstItem="PfE-nL-X9V" firstAttribute="centerX" secondItem="Xp1-Al-1CM" secondAttribute="centerX" id="EO1-Ok-4kk"/>
+                            <constraint firstItem="KMT-PL-BN2" firstAttribute="centerX" secondItem="Xp1-Al-1CM" secondAttribute="centerX" id="Ie2-Lh-YBQ"/>
+                            <constraint firstItem="O0k-hz-uBg" firstAttribute="top" secondItem="EvU-6M-47U" secondAttribute="bottom" constant="20" id="Jn8-5l-baR"/>
+                            <constraint firstItem="2IU-nw-nK6" firstAttribute="top" secondItem="O0k-hz-uBg" secondAttribute="bottom" constant="30" id="Rbz-8g-NGX"/>
+                            <constraint firstItem="B1a-qG-NYd" firstAttribute="top" secondItem="u5w-kk-N8u" secondAttribute="bottom" constant="20" id="Xwo-eS-ZgQ"/>
+                            <constraint firstItem="u5w-kk-N8u" firstAttribute="top" secondItem="olR-Iv-Eqe" secondAttribute="bottom" constant="30" id="YS0-oB-kTG"/>
+                            <constraint firstItem="KMT-PL-BN2" firstAttribute="top" secondItem="PfE-nL-X9V" secondAttribute="bottom" constant="20" id="aay-en-q2w"/>
+                            <constraint firstItem="P4p-LT-5Sx" firstAttribute="centerX" secondItem="Xp1-Al-1CM" secondAttribute="centerX" id="awR-1G-ZAc"/>
+                            <constraint firstItem="olR-Iv-Eqe" firstAttribute="top" secondItem="bg2-ZU-0Qf" secondAttribute="bottom" constant="20" id="b4L-xg-OlJ"/>
+                            <constraint firstItem="EvU-6M-47U" firstAttribute="centerX" secondItem="Xp1-Al-1CM" secondAttribute="centerX" id="dQP-Fp-W9J"/>
+                            <constraint firstItem="2IU-nw-nK6" firstAttribute="centerX" secondItem="Xp1-Al-1CM" secondAttribute="centerX" id="ga1-tn-2Kc"/>
+                            <constraint firstItem="olR-Iv-Eqe" firstAttribute="centerX" secondItem="Xp1-Al-1CM" secondAttribute="centerX" id="kjU-Py-2Lb"/>
+                            <constraint firstItem="7Xe-bP-aUj" firstAttribute="top" secondItem="6kW-jo-1ee" secondAttribute="top" constant="25" id="pka-N2-sEG"/>
+                            <constraint firstItem="u5w-kk-N8u" firstAttribute="centerX" secondItem="Xp1-Al-1CM" secondAttribute="centerX" id="tTq-jt-n6l"/>
+                            <constraint firstItem="O0k-hz-uBg" firstAttribute="centerX" secondItem="Xp1-Al-1CM" secondAttribute="centerX" id="ugg-qd-Sl5"/>
+                            <constraint firstItem="EvU-6M-47U" firstAttribute="top" secondItem="7Xe-bP-aUj" secondAttribute="bottom" constant="30" id="wZe-Qz-QV1"/>
+                            <constraint firstItem="bg2-ZU-0Qf" firstAttribute="centerX" secondItem="Xp1-Al-1CM" secondAttribute="centerX" id="wnS-wv-YE6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6kW-jo-1ee"/>
+                    </view>
+                    <connections>
+                        <outlet property="conditionSegmentControl" destination="olR-Iv-Eqe" id="3rv-G4-sYD"/>
+                        <outlet property="mileageLabel" destination="PfE-nL-X9V" id="0Sg-Xv-rYm"/>
+                        <outlet property="mileageSlider" destination="KMT-PL-BN2" id="RcR-jS-hv6"/>
+                        <outlet property="modelSegmentControl" destination="O0k-hz-uBg" id="FCG-UV-Ile"/>
+                        <outlet property="upgradesSegmentControl" destination="P4p-LT-5Sx" id="ZxN-Ns-s1D"/>
+                        <outlet property="valueLabel" destination="B1a-qG-NYd" id="WZb-Ne-XNV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W7A-cN-D5p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1270" y="119"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo1" width="793" height="1023"/>
+        <image name="logo2" width="480" height="240"/>
+        <namedColor name="TeslaRed">
+            <color red="0.88200002908706665" green="0.097000002861022949" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
